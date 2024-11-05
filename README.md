@@ -80,7 +80,7 @@ This project involves a comprehensive analysis of customer data for a subscripti
  
  identify the most popular subscription types.
 
- ![
+ ![Sub_Popular](Sub_Popular.JPG)
  
   
   
