@@ -81,6 +81,16 @@ This project involves a comprehensive analysis of customer data for a subscripti
  identify the most popular subscription types.
 
  ![Sub_Popular](Sub_Popular.JPG)
+
+ Then i wrote queries to extract key insights based on the following analysis
+- retrieve the total number of customers from each region.-
+- find the most popular subscription type by the number of customers.
+- find customers who canceled their subscription within 6 months.
+- calculate the average subscription duration for all customers.
+- find customers with subscriptions longer than 12 months.
+- calculate total revenue by subscription type.
+- find the top 3 regions by subscription cancellations.
+- find the total number of active and canceled subscriptions
  
   
   
