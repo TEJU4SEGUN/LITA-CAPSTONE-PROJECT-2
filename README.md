@@ -71,6 +71,12 @@ This project involves a comprehensive analysis of customer data for a subscripti
  
     
  I analyze customer data using pivot tables to find subscription patterns.
+
+ ![Sub_Pattern](Sub_Pattern.JPG)
+
+ To calculate the average subscription duration 
+ 
+ identify the most popular subscription types.
  
   
   
