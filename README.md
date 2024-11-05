@@ -93,7 +93,7 @@ select Region,
 COUNT(CustomerID) AS TotalCustomers
 FROM
 CustomerData
-Group by Region;```sql
+Group by Region;
 
 * find the most popular subscription type by the number of customers
 
@@ -106,6 +106,7 @@ order by CustomerCount Desc
 
 * find customers who canceled their subscription within 6 months
 
+
 select CustomerID,SubscriptionStart,SubscriptionEnd
 from
 CustomerData
@@ -113,7 +114,8 @@ where SubscriptionEnd IS NOT NULL
 AND DATEDIFF(MONTH,SubscriptionStart,SubscriptionEnd)<=6;
 
 * calculate the average subscription duration for all customers
-  
+
+
 select AVG(DATEDIFF(DAY,SubscriptionStart,SubscriptionEnd)) AS
 AvgSubscriptionDuration
 from
@@ -140,6 +142,7 @@ CustomerData;-----For Active Subscription.
 
 * find customers with subscriptions longer than 12 months-------
 
+
 select CustomerID,SubscriptionStart,SubscriptionEnd
 from
 CustomerData
@@ -148,6 +151,7 @@ coalesce(SubscriptionEnd,GETDATE()))>12;
 
 * calculate total revenue by subscription type
 
+
 SELECT SubscriptionType,
 sum(Revenue) AS TotalRevenue
 from CustomerData
@@ -155,6 +159,7 @@ Group by
 SubscriptionType;
 
 * find the top 3 regions by subscription cancellations
+
 
 select TOP 3
 Region,
@@ -168,13 +173,15 @@ ORDER BY CancellationCount DESC
 
 * find the total number of active and canceled subscriptions
 
+
 SELECT
 SUM(CASE WHEN canceled='TRUE'
 THEN 1 ELSE 0 END) AS TotalCanceled,
 SUM(CASE WHEN canceled = 'FALSE'
 THEN 1 ELSE 0 END) AS TotalActive
 from
-CustomerData;
+CustomerData;```sql
+
 
 
  I used Power BI to build a Power BI dashboard that visualizes
@@ -183,6 +190,73 @@ CustomerData;
 * I included slicers for interactive analysis.
 
 ![Sub_Performance](Subscription_Performance.JPG)
+
+
+
+### Key Insights
+
+1. Customer Segmentation Patterns:
+
+- Identified several key customer segments, such as high-frequency users, budget-conscious users, and loyal long-term subscribers.
+- These segments showed distinct behaviors; for example, high-frequency users were more likely to renew subscriptions,  
+  while budget-conscious users often canceled within a short period.
+
+
+
+2. Subscription Trends:
+
+- The renewal rate was highest among customers who have used the service wihin a year, indicating increased loyalty over time.
+- Seasonal trends showed an increase in subscriptions during the holiday season, while cancellations spiked in the months following.
+
+
+
+3. Churn Analysis:
+
+- A significant portion of cancellations occurred among customers within the first three months of subscription, suggesting the need for improved onboarding and engagement strategies.
+- Churn was more common in Basic subscription plans, indicating potential dissatisfaction or unmet expectations in these segments.
+
+
+
+4. Customer Retention:
+
+- High retention was observed among customers engaging with basic subscription plan in year 2022 but dropped in the year 2023
+- Loyalty programs and engagement tactics (like personalized emails and renewal discounts) showed a positive effect on customer retention rates.
+
+
+
+
+### Future Recommendations
+
+1. Enhanced Onboarding Experience:
+
+- Develop a more comprehensive onboarding process for new subscribers, with tutorials, welcome emails, and tailored recommendations to help users derive value quickly and reduce early cancellations.
+2. Targeted Retention Strategies:
+
+- Focus on targeted retention efforts for high-churn segments (like budget-conscious users). Offer special incentives, such as discounts for long-term subscriptions or flexible payment options, to retain these customers.
+
+
+
+3. Seasonal Marketing Campaigns:
+
+- Run seasonal marketing campaigns to capitalize on holiday sign-ups, with promotional offers for new subscribers and re-engagement offers for past customers who have canceled.
+
+4. Expand Premium Offerings:
+
+- Based on the high retention rate for premium features, consider expanding premium offerings or creating exclusive add-ons that can be bundled with subscription plans to boost satisfaction and increase renewal rates.
+
+
+5. Improved Data Collection for Customer Feedback:
+
+- Collect and analyze feedback from canceled subscriptions to better understand reasons for churn. Use surveys or exit interviews to gather insights, which can inform product improvements and tailored re-engagement efforts.
+
+
+6. Experiment with Pricing and Plans:
+
+- Consider introducing more flexible or tiered pricing plans to cater to different customer segments, like budget-conscious users. Test different price points and plan options to optimize for retention and satisfaction.
+
+
+
+
 
 
  
