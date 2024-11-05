@@ -165,7 +165,7 @@ ORDER BY CancellationCount DESC
 
 - find the total number of active and canceled subscriptions
 
-SELECT
+```SELECT
 SUM(CASE WHEN canceled='TRUE'
 THEN 1 ELSE 0 END) AS TotalCanceled,
 SUM(CASE WHEN canceled = 'FALSE'
