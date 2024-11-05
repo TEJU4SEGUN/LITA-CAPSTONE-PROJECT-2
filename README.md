@@ -87,7 +87,7 @@ This project involves a comprehensive analysis of customer data for a subscripti
 
   - retrieve the total number of customers from each region
 
-(```)sql
+```sql
 select * from CustomerData
 select Region,
 COUNT(CustomerID) AS TotalCustomers
@@ -97,7 +97,7 @@ Group by Region;```sql
 
 * find the most popular subscription type by the number of customers
 
-```sql
+
 select SubscriptionType,
 count(CustomerID) AS CustomerCount
 from CustomerData
