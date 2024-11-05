@@ -75,8 +75,12 @@ This project involves a comprehensive analysis of customer data for a subscripti
  ![Sub_Pattern](Sub_Pattern.JPG)
 
  To calculate the average subscription duration 
+
+ ![Sub_Avg](Sub_Avg.JPG)
  
  identify the most popular subscription types.
+
+ ![
  
   
   
