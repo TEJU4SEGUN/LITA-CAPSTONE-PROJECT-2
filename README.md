@@ -95,7 +95,7 @@ FROM
 CustomerData
 Group by Region;```sql
 
-- find the most popular subscription type by the number of customers
+* find the most popular subscription type by the number of customers
 
 ```sql
 select SubscriptionType,
@@ -104,7 +104,7 @@ from CustomerData
 Group by SubscriptionType
 order by CustomerCount Desc
 
-- find customers who canceled their subscription within 6 months
+* find customers who canceled their subscription within 6 months
 
 select CustomerID,SubscriptionStart,SubscriptionEnd
 from
@@ -112,7 +112,7 @@ CustomerData
 where SubscriptionEnd IS NOT NULL
 AND DATEDIFF(MONTH,SubscriptionStart,SubscriptionEnd)<=6;
 
-- calculate the average subscription duration for all customers
+* calculate the average subscription duration for all customers
   
 select AVG(DATEDIFF(DAY,SubscriptionStart,SubscriptionEnd)) AS
 AvgSubscriptionDuration
@@ -138,7 +138,7 @@ AS AvgSubscriptionDuration
 from
 CustomerData;-----For Active Subscription.
 
-- find customers with subscriptions longer than 12 months-------
+* find customers with subscriptions longer than 12 months-------
 
 select CustomerID,SubscriptionStart,SubscriptionEnd
 from
@@ -146,7 +146,7 @@ CustomerData
 where DATEDIFF(MONTH,SubscriptionStart,
 coalesce(SubscriptionEnd,GETDATE()))>12; 
 
-- calculate total revenue by subscription type
+* calculate total revenue by subscription type
 
 SELECT SubscriptionType,
 sum(Revenue) AS TotalRevenue
@@ -154,8 +154,8 @@ from CustomerData
 Group by
 SubscriptionType;
 
-- find the top 3 regions by subscription cancellations
-- 
+* find the top 3 regions by subscription cancellations
+
 select TOP 3
 Region,
 COUNT(*) AS CancellationCount
@@ -166,7 +166,7 @@ Canceled= 'TRUE'
 GROUP BY REGION
 ORDER BY CancellationCount DESC
 
-- find the total number of active and canceled subscriptions
+* find the total number of active and canceled subscriptions
 
 SELECT
 SUM(CASE WHEN canceled='TRUE'
@@ -175,6 +175,11 @@ SUM(CASE WHEN canceled = 'FALSE'
 THEN 1 ELSE 0 END) AS TotalActive
 from
 CustomerData;
+
+ I used Power BI to build a Power BI dashboard that visualizes
+* key customer segments
+* cancellations, and subscription trends.
+* I included slicers for interactive analysis.
 
  
   
