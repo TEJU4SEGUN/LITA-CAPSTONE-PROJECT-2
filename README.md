@@ -180,7 +180,8 @@ THEN 1 ELSE 0 END) AS TotalCanceled,
 SUM(CASE WHEN canceled = 'FALSE'
 THEN 1 ELSE 0 END) AS TotalActive
 from
-CustomerData;```sql
+CustomerData;
+```sql
 
 
 
