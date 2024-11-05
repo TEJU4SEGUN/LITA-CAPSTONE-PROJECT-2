@@ -29,7 +29,7 @@ This project involves a comprehensive analysis of customer data for a subscripti
 **Power BI**: To create dashboards and visualizations that clearly display customer segments, churn rates, and other trends.
 
 
-###Expected Outcomes
+### Expected Outcomes
 
 - A clear set of customer segments with descriptions of each segment's characteristics and behavior.
 - Insights into key factors driving customer cancellations and renewals.
