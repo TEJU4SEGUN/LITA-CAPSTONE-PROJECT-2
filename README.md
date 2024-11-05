@@ -25,7 +25,9 @@ This project involves a comprehensive analysis of customer data for a subscripti
 ### Tools Used
 
 **Excel**: For initial data cleaning, exploratory data analysis, and summarizing insights.
+
 **SQL**: To query and manipulate customer data, identifying segments based on conditions like subscription type, frequency, and churn status.
+
 **Power BI**: To create dashboards and visualizations that clearly display customer segments, churn rates, and other trends.
 
 
@@ -35,3 +37,18 @@ This project involves a comprehensive analysis of customer data for a subscripti
 - Insights into key factors driving customer cancellations and renewals.
 - Visualizations that highlight subscription trends, renewal patterns, and other important customer behaviors, aiding decision-making for targeted marketing and retention strategies.
 
+### Project Structure
+
+-README.md:Contains the main project documentation, including the project overview,goals, methodology, and results
+- Data/: Folder containing data files.
+  * Raw_data.csv: The original dataset with customer subscription data
+  * Processed_data.csv: The cleaned dataset used for analysis
+   
+- Scripts/:Contains code script to clean and preprocess the raw data.
+
+- Images/: Folder for visualizations generated in the project
+  * customer_segments.png: Visual representation of customer segments.
+  * churn_trends.png: Graph showing trends in subscription churn
+ 
+- reports/: Final report or presentation files summarizing findings.
+ *summary_report.pdf: PDF report with key insights and recommendations.
