@@ -92,7 +92,7 @@ select Region,
 COUNT(CustomerID) AS TotalCustomers
 FROM
 CustomerData
-Group by Region;```
+Group by Region; ```
 
 - find the most popular subscription type by the number of customers
 select SubscriptionType,
