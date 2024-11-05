@@ -181,6 +181,8 @@ CustomerData;
 * cancellations, and subscription trends.
 * I included slicers for interactive analysis.
 
+![Subscription_Performance](Subscription_Performance.JPG)
+
  
   
   
