@@ -87,7 +87,7 @@ This project involves a comprehensive analysis of customer data for a subscripti
 
   - retrieve the total number of customers from each region
 
-```
+```sql
 select * from CustomerData
 select Region,
 COUNT(CustomerID) AS TotalCustomers
