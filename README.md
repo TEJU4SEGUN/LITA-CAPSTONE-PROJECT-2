@@ -152,6 +152,7 @@ Group by
 SubscriptionType;
 
 - find the top 3 regions by subscription cancellations
+- 
 select TOP 3
 Region,
 COUNT(*) AS CancellationCount
