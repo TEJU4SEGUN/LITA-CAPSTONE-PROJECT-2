@@ -174,7 +174,8 @@ THEN 1 ELSE 0 END) AS TotalCanceled,
 SUM(CASE WHEN canceled = 'FALSE'
 THEN 1 ELSE 0 END) AS TotalActive
 from
-CustomerData;
+CustomerData;```sql
+
 
  I used Power BI to build a Power BI dashboard that visualizes
 * key customer segments
