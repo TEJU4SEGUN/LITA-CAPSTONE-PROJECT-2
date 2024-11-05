@@ -103,7 +103,8 @@ Group by SubscriptionType
 order by CustomerCount Desc
 
 - find customers who canceled their subscription within 6 months
-select CustomerID,SubscriptionStart,SubscriptionEnd
+
+```select CustomerID,SubscriptionStart,SubscriptionEnd
 from
 CustomerData
 where SubscriptionEnd IS NOT NULL
