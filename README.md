@@ -245,7 +245,7 @@ CustomerData;
 
 3. Churn Analysis:
 
-- A significant portion of cancellations occurred among customers within the first three months of subscription, suggesting the need for improved onboarding and engagement strategies.
+- A significant portion of cancellations occurred among customers within the first year of subscription, suggesting the need for improved onboarding and engagement strategies.
 - Churn was more common in Basic subscription plans, indicating potential dissatisfaction or unmet expectations in these segments.
 
 
@@ -253,7 +253,7 @@ CustomerData;
 4. Customer Retention:
 
 - High retention was observed among customers engaging with basic subscription plan in year 2022 but dropped in the year 2023
-- Loyalty programs and engagement tactics (like personalized emails and renewal discounts) showed a positive effect on customer retention rates.
+- Loyalty programs and engagement tactics (like personalized emails and renewal discounts)  can show a positive effect on customer retention rates.
 
 
 
