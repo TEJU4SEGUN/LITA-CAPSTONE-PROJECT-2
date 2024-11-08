@@ -91,7 +91,7 @@ This project involves a comprehensive analysis of customer data for a subscripti
 
     <table>
     <tr>
-    <td>
+    <td> syle="vertical-align: top; padding-right: 10px;">
     <!--SQL Query Block-->
     <pre>
    select * from CustomerData
@@ -102,9 +102,9 @@ This project involves a comprehensive analysis of customer data for a subscripti
   Group by Region;
   </pre>
   </td>
-  <td>
+  <td> syle="vertical-align: top;">
   <!--Image Screenshot-->
-   <img scr="CustomerData_regioin.JPG" width="300px" />
+   <img scr="CustomerData_regioin.JPG" alt="Description of image" width="300px" />
   </td>
   </tr>
   <table>
