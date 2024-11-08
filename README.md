@@ -96,7 +96,7 @@ This project involves a comprehensive analysis of customer data for a subscripti
  FROM
  CustomerData
  Group by Region; | ![Screenshot]
- (
+ (CustomerData_region.JPG)
 
    
                                                     ```sql
