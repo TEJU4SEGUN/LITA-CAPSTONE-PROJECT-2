@@ -87,17 +87,15 @@ This project involves a comprehensive analysis of customer data for a subscripti
 
   - retrieve the total number of customers from each region
 
-```
-| SQL Query | Screenshot |
-|-----------|------------|
-|select * from CustomerData
+```SQL
+ select * from CustomerData
  select Region,                                            
  COUNT(CustomerID) AS TotalCustomers
  FROM
  CustomerData
- Group by Region; |
+ Group by Region; 
 <img src=
- "CustomerData_region](CustomerData_region.JPG"  width="300px" /> |
+ "![CustomerData_region](CustomerData_region.JPG)" width="300px" /> 
 
    
                                                     ```sql
