@@ -124,12 +124,12 @@ where SubscriptionEnd IS NOT NULL
 AND DATEDIFF(MONTH,SubscriptionStart,SubscriptionEnd)<=6;
 ```
 <img src=
- "./Popular_Sub.JPG" alt=Description of image 
+ "./Cancel_Sub.JPG" alt=Description of image 
  width="300px" /> 
 
-* calculate the average subscription duration for all customers
+- Calculate the average subscription duration for all customers
 
-
+```SQL
 select AVG(DATEDIFF(DAY,SubscriptionStart,SubscriptionEnd)) AS
 AvgSubscriptionDuration
 from
@@ -153,6 +153,11 @@ coalesce(SubscriptionEnd,GETDATE())))
 AS AvgSubscriptionDuration
 from
 CustomerData;-----For Active Subscription.
+```
+<img src=
+ "./Cancel_Sub.JPG" alt=Description of image 
+ width="300px" /> 
+
 
 * find customers with subscriptions longer than 12 months-------
 
