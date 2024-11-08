@@ -239,6 +239,7 @@ CustomerData;
 2. Subscription Trends:
 
 - The renewal rate was highest among customers who have used the service wihin a year, indicating increased loyalty over time.
+- There is customer that has uses the service longer than a year which suggest intensify advertiments with promos and discounts.
 - Seasonal trends showed an increase in subscriptions during the holiday season, while cancellations spiked in the months following.
 
 
