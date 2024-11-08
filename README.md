@@ -108,6 +108,7 @@ This project involves a comprehensive analysis of customer data for a subscripti
   </td>
   </tr>
   <table>
+   
                                                     ```sql
                                                     select * from CustomerData
                                                     select Region,                                            
