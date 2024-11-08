@@ -198,7 +198,7 @@ GROUP BY REGION
 ORDER BY CancellationCount DESC
 ```
 <img src=
- "./Sub_Duration.JPG" alt=Description of image 
+ "./Sub_Region.JPG" alt=Description of image 
  width="300px" />
 
 - Find the total number of active and canceled subscriptions
