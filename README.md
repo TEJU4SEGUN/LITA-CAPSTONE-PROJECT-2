@@ -217,7 +217,7 @@ CustomerData;
  width="300px" />
 
 
- I used Power BI to build a Power BI dashboard that visualizes
+ I used Power BI to build a dashboard that visualizes
 * key customer segments
 * cancellations, and subscription trends.
 * I included slicers for interactive analysis.
