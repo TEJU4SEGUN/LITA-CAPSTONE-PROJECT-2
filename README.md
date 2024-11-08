@@ -86,14 +86,14 @@ This project involves a comprehensive analysis of customer data for a subscripti
 
 
   - retrieve the total number of customers from each region
+![CustomerData_region](CustomerData_region.JPG)  ```sql
+                                                    select * from CustomerData
+                                                    select Region,                                            
+                                                    COUNT(CustomerID) AS TotalCustomers
+                                                    FROM
+                                                    CustomerData
+                                                    Group by Region; 
 
-```sql
-select * from CustomerData
-select Region,                                            ![CustomerData_region](CustomerData_region.JPG)
-COUNT(CustomerID) AS TotalCustomers
-FROM
-CustomerData
-Group by Region;
 
 * find the most popular subscription type by the number of customers
 
