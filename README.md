@@ -96,7 +96,8 @@ This project involves a comprehensive analysis of customer data for a subscripti
  Group by Region;
 ```
 <img src=
- "![CustomerData_region](CustomerData_region.JPG)" width="300px" /> 
+ "./CustomerData_region.JPG" alt=Description of image 
+ width="300px" /> 
 
    
                                                     ```sql
