@@ -213,7 +213,7 @@ from
 CustomerData;
 ```
 <img src=
- "./Sub_Duration.JPG" alt=Description of image 
+ "./Sub_Active.JPG" alt=Description of image 
  width="300px" />
 
 
