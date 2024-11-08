@@ -86,8 +86,28 @@ This project involves a comprehensive analysis of customer data for a subscripti
 
 
   - retrieve the total number of customers from each region
-  - 
-![CustomerData_region](CustomerData_region.JPG)
+
+
+
+    <table>
+    <tr>
+    <td>
+    <!--SQL Query Block-->
+    <pre>
+   select * from CustomerData
+   select Region,                                            
+   COUNT(CustomerID) AS TotalCustomers
+   FROM
+  CustomerData
+  Group by Region;
+  </pre>
+  </td>
+  <td>
+  <!--Image Screenshot-->
+   <img scr="CustomerData_regioin.JPG" width="300px" />
+  </td>
+  </tr>
+  <table>
                                                     ```sql
                                                     select * from CustomerData
                                                     select Region,                                            
