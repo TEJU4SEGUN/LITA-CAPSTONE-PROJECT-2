@@ -89,7 +89,7 @@ This project involves a comprehensive analysis of customer data for a subscripti
 
 ```sql
 select * from CustomerData
-select Region,
+select Region,                                            ![CustomerData_region](CustomerData_region.JPG)
 COUNT(CustomerID) AS TotalCustomers
 FROM
 CustomerData
