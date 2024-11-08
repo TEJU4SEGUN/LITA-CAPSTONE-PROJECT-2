@@ -93,9 +93,10 @@ This project involves a comprehensive analysis of customer data for a subscripti
  COUNT(CustomerID) AS TotalCustomers
  FROM
  CustomerData
- Group by Region; 
+ Group by Region;
+```
 <img src=
- "![CustomerData_region](CustomerData_region.JPG)" width="300px" /> 
+ !"[CustomerData_region](CustomerData_region.JPG)" width="300px" /> 
 
    
                                                     ```sql
