@@ -181,7 +181,7 @@ Group by
 SubscriptionType;
 ```
 <img src=
- "./sql_Revenue.JPG" alt=Description of image 
+ "./Sub_type.JPG" alt=Description of image 
  width="300px" />
 
 - Find the top 3 regions by subscription cancellations
