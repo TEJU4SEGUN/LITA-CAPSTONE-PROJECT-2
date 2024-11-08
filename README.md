@@ -85,7 +85,7 @@ This project involves a comprehensive analysis of customer data for a subscripti
  Then i wrote queries to extract key insights based on the following analysis
 
 
-  - retrieve the total number of customers from each region
+  - Retrieve the total number of customers from each region
 
 ```SQL
  select * from CustomerData
@@ -100,24 +100,19 @@ This project involves a comprehensive analysis of customer data for a subscripti
  width="300px" /> 
 
    
-                                                    ```sql
-                                                    select * from CustomerData
-                                                    select Region,                                            
-                                                    COUNT(CustomerID) AS TotalCustomers
-                                                    FROM
-                                                    CustomerData
-                                                    Group by Region; 
+ - Find the most popular subscription type by the number of customers
 
-
-* find the most popular subscription type by the number of customers
-
-
+```SQL
 select SubscriptionType,
 count(CustomerID) AS CustomerCount
 from CustomerData
 Group by SubscriptionType
 order by CustomerCount Desc
-
+```
+<img src=
+ "./CustomerData_region.JPG" alt=Description of image 
+ width="300px" /> 
+ 
 * find customers who canceled their subscription within 6 months
 
 
