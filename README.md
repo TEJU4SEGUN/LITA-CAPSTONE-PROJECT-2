@@ -168,7 +168,7 @@ where DATEDIFF(MONTH,SubscriptionStart,
 coalesce(SubscriptionEnd,GETDATE()))>12;
 ```
 <img src=
- "./Sub_Duration.JPG" alt=Description of image 
+ "./Longer_12.JPG" alt=Description of image 
  width="300px" />
 
 - Calculate total revenue by subscription type
