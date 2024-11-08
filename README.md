@@ -110,7 +110,7 @@ Group by SubscriptionType
 order by CustomerCount Desc
 ```
 <img src=
- "./CustomerData_region.JPG" alt=Description of image 
+ "./Popular_Sub.JPG" alt=Description of image 
  width="300px" /> 
  
 * find customers who canceled their subscription within 6 months
