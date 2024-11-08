@@ -155,31 +155,38 @@ from
 CustomerData;-----For Active Subscription.
 ```
 <img src=
- "./Cancel_Sub.JPG" alt=Description of image 
+ "./Sub_Duration.JPG" alt=Description of image 
  width="300px" /> 
 
+- Find customers with subscriptions longer than 12 months-------
 
-* find customers with subscriptions longer than 12 months-------
-
-
+```SQL
 select CustomerID,SubscriptionStart,SubscriptionEnd
 from
 CustomerData
 where DATEDIFF(MONTH,SubscriptionStart,
-coalesce(SubscriptionEnd,GETDATE()))>12; 
+coalesce(SubscriptionEnd,GETDATE()))>12;
+```
+<img src=
+ "./Sub_Duration.JPG" alt=Description of image 
+ width="300px" />
 
-* calculate total revenue by subscription type
+- Calculate total revenue by subscription type
 
-
+```SQL
 SELECT SubscriptionType,
 sum(Revenue) AS TotalRevenue
 from CustomerData
 Group by
 SubscriptionType;
+```
+<img src=
+ "./Sub_Duration.JPG" alt=Description of image 
+ width="300px" />
 
-* find the top 3 regions by subscription cancellations
+- Find the top 3 regions by subscription cancellations
 
-
+```SQL
 select TOP 3
 Region,
 COUNT(*) AS CancellationCount
@@ -189,10 +196,14 @@ where
 Canceled= 'TRUE'
 GROUP BY REGION
 ORDER BY CancellationCount DESC
+```
+<img src=
+ "./Sub_Duration.JPG" alt=Description of image 
+ width="300px" />
 
-* find the total number of active and canceled subscriptions
+- Find the total number of active and canceled subscriptions
 
-
+```SQL
 SELECT
 SUM(CASE WHEN canceled='TRUE'
 THEN 1 ELSE 0 END) AS TotalCanceled,
@@ -201,7 +212,9 @@ THEN 1 ELSE 0 END) AS TotalActive
 from
 CustomerData;
 ```
-
+<img src=
+ "./Sub_Duration.JPG" alt=Description of image 
+ width="300px" />
 
 
  I used Power BI to build a Power BI dashboard that visualizes
