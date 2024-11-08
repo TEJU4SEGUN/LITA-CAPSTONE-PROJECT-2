@@ -112,15 +112,20 @@ order by CustomerCount Desc
 <img src=
  "./Popular_Sub.JPG" alt=Description of image 
  width="300px" /> 
+
  
-* find customers who canceled their subscription within 6 months
+-Find customers who canceled their subscription within 6 months
 
-
+```SQL
 select CustomerID,SubscriptionStart,SubscriptionEnd
 from
 CustomerData
 where SubscriptionEnd IS NOT NULL
 AND DATEDIFF(MONTH,SubscriptionStart,SubscriptionEnd)<=6;
+```
+<img src=
+ "./Popular_Sub.JPG" alt=Description of image 
+ width="300px" /> 
 
 * calculate the average subscription duration for all customers
 
